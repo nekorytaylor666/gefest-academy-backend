@@ -1,7 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "ts-node": {
-    "swc": true,
     "pretty": true,
     "watch-files": ["src"]
   },
