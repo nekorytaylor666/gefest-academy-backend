@@ -7,8 +7,8 @@ export enum Environments {
 
 export enum EnvironmentFile {
   DEFAULT = '.env',
-  PRODUCTION = '.env.prod',
-  DEV = '.env.dev',
-  TEST = '.env.test',
-  STAGING = '.env.stage',
+  PRODUCTION = '.env',
+  DEV = '.env',
+  TEST = '.env',
+  STAGING = '.env',
 }
