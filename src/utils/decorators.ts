@@ -15,7 +15,7 @@ import logger from '@/lib/logger';
 export function createDecorator<
   TFnArgs,
   TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs,
-  TReturn = void,
+  TReturn = void
 >(
   descriptorFn: DescriptorFn<TFnArgs, TReturn>,
   descriptorArgs: TFnArgs
@@ -44,7 +44,7 @@ export function createContextDecorator<
   This,
   TReturn,
   TFnArgs,
-  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs,
+  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs
 >(
   context: ClassMethodDecoratorContext<This, ContextTarget<This, TReturn>>,
   _target: ContextTarget<This, TReturn>,

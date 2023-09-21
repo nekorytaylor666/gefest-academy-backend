@@ -8,7 +8,7 @@ export type DefaultDecoratorArgs = [unknown];
  * the default arguments are `[string, number]`. Otherwise, it uses the provided type `T`.
  */
 export type DecoratorArgs<
-  T extends DefaultDecoratorArgs = DefaultDecoratorArgs,
+  T extends DefaultDecoratorArgs = DefaultDecoratorArgs
 > = T extends never[] ? [string, number] : T;
 
 /**
@@ -30,7 +30,7 @@ export type DescriptorFn<TArgs, TReturn = void> = (args: TArgs) => TReturn;
  * arguments that the decorator accepts, based on type `TArgs`.
  */
 export type Descriptor<
-  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs,
+  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs
 > = TypedPropertyDescriptor<DescriptorValue<TArgs>>;
 
 /**
@@ -39,7 +39,7 @@ export type Descriptor<
  */
 export type GeneratedDecorator<
   T = unknown,
-  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs,
+  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs
 > = (
   target: T,
   key: string,
@@ -59,5 +59,5 @@ export type ContextTarget<This, TReturn> = (
  * Represents the value type for a descriptor, which is a function accepting decorator arguments.
  */
 export type DescriptorValue<
-  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs,
+  TArgs extends DefaultDecoratorArgs = DefaultDecoratorArgs
 > = (...args: DecoratorArgs<TArgs>) => any;

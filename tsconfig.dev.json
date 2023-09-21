@@ -3,9 +3,7 @@
   "ts-node": {
     "swc": true,
     "pretty": true,
-    "watch-files": [
-      "src"
-    ]
+    "watch-files": ["src"]
   },
   "compilerOptions": {
     "rootDir": "src"

@@ -4,12 +4,6 @@
     "rootDir": ".",
     "baseUrl": "."
   },
-  "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts",
-    "prisma/**/*.ts",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "tests/**/*.ts", "prisma/**/*.ts"],
+  "exclude": ["node_modules"]
 }

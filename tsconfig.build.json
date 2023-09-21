@@ -4,12 +4,7 @@
     "listEmittedFiles": true,
     "diagnostics": true,
     "pretty": true,
-    "sourceMap": true,
+    "sourceMap": true
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "tests",
-    "primsa",
-  ],
+  "exclude": ["node_modules", "dist", "tests", "primsa"]
 }
