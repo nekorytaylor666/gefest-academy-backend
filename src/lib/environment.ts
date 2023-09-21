@@ -72,12 +72,12 @@ class Environment implements IEnvironment {
   public setEnvironment(env = Environments.DEV): void {
     this.env = env;
 
-    const envKey = Object.keys(Environments).find(
-      (key) => Environments[key] === this.env
-    ) as keyof typeof Environments;
-    const envPath = this.resolveEnvPath(envKey);
+    // const envKey = Object.keys(Environments).find(
+    //   (key) => Environments[key] === this.env
+    // ) as keyof typeof Environments;
+    // const envPath = this.resolveEnvPath(envKey);
 
-    configDotenv({ path: envPath });
+    // configDotenv({ path: envPath });
     this.validateEnvValues();
   }
 
