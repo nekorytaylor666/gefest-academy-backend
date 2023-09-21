@@ -65,6 +65,7 @@ class Environment implements IEnvironment {
 
   private validateEnvValues() {
     const env = cleanEnv(process.env, envValidationConfig);
+
     this.port = env.PORT;
     this.appUrl = env.APP_BASE_URL;
   }
@@ -72,12 +73,6 @@ class Environment implements IEnvironment {
   public setEnvironment(env = Environments.DEV): void {
     this.env = env;
 
-    // const envKey = Object.keys(Environments).find(
-    //   (key) => Environments[key] === this.env
-    // ) as keyof typeof Environments;
-    // const envPath = this.resolveEnvPath(envKey);
-
-    // configDotenv({ path: envPath });
     this.validateEnvValues();
   }
 

@@ -3,6 +3,7 @@ import nocache from 'nocache';
 import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
+import 'dotenv/config';
 import expressJSDocSwagger from 'express-jsdoc-swagger';
 import home from './home';
 import environment from './lib/environment';
